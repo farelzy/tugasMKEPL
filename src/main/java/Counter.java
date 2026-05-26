@@ -47,4 +47,13 @@ public class Counter {
 		return count;
 	}
 	
+	
+	public void testCodeSmell() {
+		int unusedVariable = 10;
+		
+		try {
+			int a = 10 / 0;
+		} catch (Exception e) {
+		}
+	}
 }
